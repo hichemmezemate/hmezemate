@@ -57,6 +57,7 @@ ul {
     position: relative;
     display: flexbox;
     width: 100%;
+    top: -13vh;
 }
 
 .div_style, .div_style2  {
@@ -109,10 +110,10 @@ ul {
 
 }
 
-.navbar_links {
+/* .navbar_links {
     position: relative;
     top: -13vh;
-}
+} */
 
 
 .navbar_item a {
@@ -125,6 +126,7 @@ ul {
     left: 8vw;
     z-index: 50;
     transition: 0.2s ease-in-out;
+
 }
 
 .containPage3 {
@@ -134,28 +136,30 @@ ul {
     transition: 0.2s ease-in-out;
     padding: 0;
     margin: 0;
+
+
 }
 
 
-.Cardd {
+.Card1 {
     position: absolute;
-    display: inline-flex;
-    margin: 0rem 3rem ;
+    left: 4vw;
+    margin: 0 ;
     border-radius: 50px;
-    left: 2rem;
-    top: 7rem;
-    height: fit-content;
-    width: fit-content;
+    top: 10vh;
+    height: 78vh;
+    width: 40vw;
     background-color: #ffffff;
 }
 
 .Card2 {
     position: absolute;
-    display: inline-flex;
-    margin: 0rem 3rem ;
+    left: 48vw;
+    margin: 0 ;
+    height: 78vh;
+    width: 40vw;
     border-radius: 50px;
-    left: 55rem;
-    top: 2rem;
+    top: 6vh;
     height: fit-content;
     width: fit-content;
     background-color: #ffffff;
@@ -163,12 +167,12 @@ ul {
 
 .box1 {
     position: relative;
-    height: 45rem;
-    width: 45rem;
-    left: 0rem;
+    height: 70vh;
+    width: 40vw;
+    left: 0;
     color: #676767;
     font-size: 3vh;
-    padding: 2rem;
+    padding: 4vw;
 }
 
 .box1 > p {
@@ -177,17 +181,19 @@ ul {
 
 .box2 {
     position: relative;
-    height: 55rem;
-    width: 45rem;
-    left: 0rem;
+    height: 85vh;
+    width: 40vw;
+    left: 0;
     color: #676767;
     font-size: 7vh;
-    padding: 2rem;
+    padding: 2vw;
 }
 
 .box2 > p {
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
+    font-size: 2.5vh;
+    padding-top: 0;
+    position: absolute;
+    bottom: 8vh;
 }
 
 .ContCard {
@@ -253,7 +259,7 @@ ul {
 }
 
 
-.stacks {
+/* .stacks {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -261,7 +267,7 @@ ul {
     grid-gap: 2rem 5rem;
     justify-content: center;
     align-items: center; 
-    top: 50rem;   
+    top: 50vh;   
 }
 
 .stacks div {
@@ -271,43 +277,46 @@ ul {
     align-items: center;
     font-size: 8rem;
     transform-origin: 50% 50%;
-}
+} */
 
 .codingImage {
     z-index: 800;
-    height: 30rem;
+    width: 35vw;
+
+    position: absolute;
+    top: 0;
 }
 
 .front {
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    gap: 4rem;
+    gap: 4vw;
     /* border: #3A41DD solid; */
-    font-size: 4rem;
+    font-size: 8vh;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .box3 {
-    font-size: 2rem;
+    font-size: 2vh;
     text-align: center;
     color: #2a2a2a;
     font-weight: 800;
 }
 
 .back > img {
-    height: 4rem;
+    height: 7vh;
 }
 
 .back {
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    gap: 4rem;
+    gap: 4vw;
     /* border: #3A41DD solid; */
-    font-size: 4rem;
+    font-size: 8vh;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -438,5 +447,238 @@ ul {
     align-items: center;
     justify-content: center;
     transition: 0.1s ease-in-out;
+}
+
+.clickable {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        position: fixed;
+        height: 12vh;
+        width: 100%;
+        background-color: #3A41DD;
+        padding: 0;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 4vh;
+        z-index: 10000000000000000000;
+    }
+
+    .div_style, .div_style2  {
+        display: none;
+    }
+
+    .navbar_logo {
+        display: none;
+    }
+
+    .wrapper {
+        position: absolute;
+        width: 100%;
+        top: 0vh;
+        left: 0;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .navbar_links {
+        position: relative;
+        height: 12vh;
+        padding: 0;
+        margin: 0;
+        top: 0vh;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+
+
+    .navbar_logo img {
+        display: none;
+    }
+
+    .navbar_item {
+        position: relative;
+        top: 0vh;
+        height: 100%;
+        padding: 2vh;
+        margin: 0;
+        font-size: 6vh;
+
+    }
+
+    .clickable {
+        display: block;
+        position: absolute;
+        height: 31vh;
+        width: 100%;
+        z-index: 80000000;
+    }
+
+    .projCard p {
+        display: none;
+    }
+
+
+    .Card1 {
+        position: absolute;
+        margin: 0vh ;
+        left: 2vw;
+        top: 15vh;
+        height: 84vh;
+        width: 96vw;
+        /* background-color: #cb4040; */
+    }
+
+    .box1 {
+        /* background-color: transparent; */
+        height: 100%;
+        padding: 4vh;
+        width: 100%;
+        font-size: 3vh;
+    }
+    
+    .Card2 {
+        position: absolute;
+        border-radius: 50px;
+        left: 4vw;
+        top: 102vh;
+        background-color: #ffffff;
+        z-index: 1000;
+        height: 72vh;
+        margin-bottom: 10vh;
+        width: 92%;
+    }
+
+    .box2 {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .box2 p {
+        top: 0vh;
+        font-size: 3vh;
+        padding: 5vh;
+    }
+
+    
+    .containPage {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: -800000;
+        left: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    .front {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 4vw;
+        /* border: #3A41DD solid; */
+        font-size: 8vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .codingImage {
+        overflow: hidden;
+        visibility: hidden;
+        position: fixed;
+    }
+
+    .containPage3 {
+        position: relative;
+        top: 12vh;
+        height: 100%;
+        width: 100vw;
+        left: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    .cards {
+        position: relative;
+        left: 0;
+        top: 1vh;
+        padding: 0vh;
+        margin: 0vh 5%;
+        height: 170vh;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .projCard img {
+        height: auto;
+        width: 70vw;
+        z-index: 0;
+        padding: 0;
+        margin: 0;
+        transition: 0.2s ease-in-out;
+    }
+
+    .projCard h5 {
+        width: 100%;
+        font-size: 3vh;
+    }
+
+    .projCard:hover h5 {
+        width: 100%;
+        font-size: 3vh;
+    }
+
+
+    .wrapper2 {
+        left: 0;
+        top: 10vh;
+        height: 140vh;
+        width: 100vw;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 3vh;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .containPage2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .ContCard {
+        width: 50vw;
+        height: 30vh;
+        margin: 4vh;
+    }
+
+    .ContCard h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 2vh;
+        display: none;
+    }
+
+    .overlayImage {
+        position: absolute;
+        height: auto;
+        visibility: hidden;
+        z-index: -40;
+        box-shadow: 1px 17px 14px -10px rgba(0,0,0,0.17);
+        -webkit-box-shadow: 1px 17px 14px -10px rgba(0,0,0,0.17);
+        -moz-box-shadow: 1px 17px 14px -10px rgba(0,0,0,0.17);
+    }
 }
 

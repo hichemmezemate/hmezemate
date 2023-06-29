@@ -14,7 +14,7 @@ import mySVGCode from "../components/download.svg";
 const Home = () => {
   return (
     <div className="containPage">
-      <div className="Cardd">
+      <div className="Card1">
         <div className="box1">
           Welcome to my portfolio website! I'm a passionate full-stack developer. With a good foundation in both front-end and back-end development, I bring creative and functional solutions to the digital world.
           <br />
@@ -33,8 +33,6 @@ const Home = () => {
             <img src={pythonLogo} alt="python" />
             <img src={django} alt="django" />
             <img src={postgresql} alt="postgresql" />
-
-            
           </div>
         </div>
       </div>
